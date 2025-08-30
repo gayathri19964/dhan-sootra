@@ -1,0 +1,88 @@
+.header {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 80px;
+}
+
+.logo img {
+  height: 70px;
+  width: 300px;
+}
+
+.profile-card {
+  display: flex;
+  gap: 80px;
+  padding: 30px;
+  background: #e6f7ff; /* light blue */
+  border: 2px solid #007f5f; /* green border */
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.profile-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  background: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.info-box input {
+  margin-bottom: 5px;
+}
+
+.sliders label {
+  font-weight: bold;
+  margin-top: 10px;
+}

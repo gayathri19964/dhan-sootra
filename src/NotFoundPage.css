@@ -1,0 +1,11 @@
+.notfound-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  color: #333;
+  font-family: sans-serif;
+}
+

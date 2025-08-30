@@ -1,0 +1,250 @@
+:root {
+  --primary: #3f51b5;  /* Indigo */
+  --accent: #fbc02d;   /* Amber */
+  --bg-light: #f9f9fb;
+  --text-dark: #2e2e2e;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: Footlight MT Light, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 5px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.information-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.information-form h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: var(--primary);
+}
+
+.information-form .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.information-form input,
+.information-form select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  font-size: 15px;
+  background: white;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid var(--accent);
+  text-align: center;
+}
+
+.card h4 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.card p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.summary-card,
+.prediction-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border-top: 4px solid var(--primary);
+}
+
+.summary-card h4,
+.prediction-card h4 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.add-expense-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.expense-form h3 {
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row select,
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.add-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #303f9f;
+}
+
+.expense-table {
+  margin-top: 30px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.expense-table h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.expense-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.expense-table th {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 700;
+}
+
+.expense-table tr:nth-child(even) {
+  background-color: #f3f5fa;
+}
+
+.expense-table tr:hover {
+  background-color: #eaf2ff;
+}
+
+.predict-btn {
+  background-color: var(--accent);
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.predict-btn:hover {
+  background-color: #f1b000;
+}
+
+.prediction-result {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+.prediction-result .card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  padding: 18px 22px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-left: 5px solid var(--accent);
+}
+
+.prediction-result .card h4 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.prediction-result .card p {
+  font-size: 1.3rem;
+  color: #555;
+  margin: 0;
+}
+
+.prediction-result .message {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.prediction-result .message.warning {
+  color: #c62828;
+  font-weight: 600;
+}
+
+.prediction-result .message.encouragement {
+  color: #2e7d32;
+  font-weight: 600;
+}

@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Footlight MT Light, sans-serif;
+}
+
+.retirement-wrapper {
+  background-image: url('bk4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.retirement-wrapper .header {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 80px;
+}
+
+.retirement-wrapper .logo img {
+  height: 70px;
+  width: 300px;
+}
+
+.retirement-wrapper nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.retirement-wrapper nav span {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.retirement-wrapper .container {
+  background-color: rgba(249, 249, 249, 0.9);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.retirement-wrapper .container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.retirement-wrapper .container label {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #333;
+  display: block;
+}
+
+.retirement-wrapper .container input {
+  padding: 10px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.retirement-wrapper .container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.retirement-wrapper .container button:hover {
+  background-color: #0056b3;
+}
+
+.retirement-wrapper .result {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #e6ffe6;
+  border: 1px solid #66cc66;
+  border-radius: 6px;
+  text-align: center;
+  color: #2b662b;
+  font-weight: 500;
+}
+.retirement-wrapper .advice {
+  margin-top: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border: 1px solid #b2ebf2;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.retirement-wrapper .advice:hover {
+  transform: scale(1.01);
+}
+
+.retirement-wrapper .advice h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+.retirement-wrapper .advice ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.retirement-wrapper .advice li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #b0cfe3;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.retirement-wrapper .advice li::before {
+  content: "💡";
+  font-size: 1.2rem;
+}
